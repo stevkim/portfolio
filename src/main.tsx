@@ -4,6 +4,8 @@ import './index.css'
 import { RouterProvider, Router, RootRoute, Route } from '@tanstack/react-router'
 import Home from './containers/Home.tsx'
 import Contact from './containers/Contact.tsx'
+import { Provider } from 'react-redux';
+import { store } from './store';
 
 const rootRoute = new RootRoute({
   component: App
@@ -31,4 +33,8 @@ declare module '@tanstack/react-router' {
   }
 }
 
-ReactDOM.createRoot(document.getElementById('root')!).render(<RouterProvider router={router} />)
+ReactDOM.createRoot(document.getElementById('root')!).render(
+  <Provider store={store}>
+    <RouterProvider router={router} />
+  </Provider>
+);

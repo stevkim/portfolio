@@ -1,4 +1,4 @@
-import NavLink from '../features/NavLink';
+import NavLink from './NavLink';
 import ToggleTheme from './ToggleTheme';
 
 const temp = [

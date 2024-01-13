@@ -1,16 +1,8 @@
-import { useState } from 'react';
 import Input from '../components/contact/Input';
 import TextArea from '../components/contact/TextArea';
 import SubmitBtn from '../components/contact/SubmitBtn';
 
-type UserInput = {
-  name: string,
-  email: string,
-  message: string
-}
-
 const Contact = () => {
-  const [userInput, setUserInput] = useState<UserInput>({ name: '', email: '', message: '' });
 
   return (
     <section className="flex flex-col gap-8 items-center max-w-[600px] mx-auto mt-10">
