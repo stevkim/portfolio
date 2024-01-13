@@ -9,7 +9,7 @@ export default {
   },
   plugins: [require('daisyui')],
   daisyui: {
-    themes: ['pastel', 'dim']
+    themes: ['corporate', 'business']
   }
 }
 

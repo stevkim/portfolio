@@ -1,6 +1,6 @@
 .nav-link {
   transition: all .1s linear;
-  background: linear-gradient(to right, rgb(8, 9, 9) 50%, gray 50%);
+  background: linear-gradient(to right, oklch(var(--p)) 50%, oklch(var(--s)) 50%);
   background-size: 200% 100%;
   background-position: right bottom;
 }

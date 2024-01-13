@@ -1,7 +1,7 @@
 import Navbar from './components/Navbar';
-import Home from './containers/Home';
 import useScroll from './hooks/useScroll';
 import Scroll from './components/Scroll';
+import { Outlet } from '@tanstack/react-router';
 
 function App() {
   const showScroll = useScroll();
@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <Home />
+      <Outlet />
       {showScroll && <Scroll />}
     </>
   )
