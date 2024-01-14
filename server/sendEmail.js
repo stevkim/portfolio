@@ -2,9 +2,8 @@ import 'dotenv/config';
 import nodemailer from 'nodemailer';
 import emailTemplate from './emailTemplate.js';
 
-async function sendEmail() {
-  console.log(process.env.EMAIL_USERNAME)
-
+async function sendEmail(data) {
+  console.log(data);
   const transporter = nodemailer.createTransport({
     host: 'smtp.gmail.com',
     port: 587,

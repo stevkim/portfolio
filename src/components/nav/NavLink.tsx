@@ -1,14 +1,10 @@
 import { Link } from '@tanstack/react-router';
 import { useState } from 'react';
 import './nav.css';
-
-type Link = {
-  name: string,
-  link: string
-}
+import type { NavLink } from '../../assets/siteData';
 
 interface Props {
-  input: Link
+  input: NavLink
 }
 
 const NavLink = ({ input }:Props) => {

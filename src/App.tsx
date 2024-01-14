@@ -1,16 +1,14 @@
 import Navbar from './components/nav/Navbar';
-import useScroll from './hooks/useScroll';
-import Scroll from './components/Scroll';
+import Footer from './components/footer/Footer';
 import { Outlet } from '@tanstack/react-router';
 
 function App() {
-  const showScroll = useScroll();
 
   return (
     <>
       <Navbar />
       <Outlet />
-      {showScroll && <Scroll />}
+      <Footer />
     </>
   )
 }

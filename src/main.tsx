@@ -4,6 +4,8 @@ import './index.css'
 import { RouterProvider, Router, RootRoute, Route } from '@tanstack/react-router'
 import Home from './containers/Home.tsx'
 import Contact from './containers/Contact.tsx'
+import About from './containers/About.tsx'
+import Portfolio from './containers/Portfolio.tsx'
 import { Provider } from 'react-redux';
 import { store } from './store';
 
@@ -17,13 +19,25 @@ const homeRoute = new Route({
   component: Home
 })
 
+const portfolioRoute = new Route({
+  getParentRoute: () => rootRoute,
+  path: '/portfolio',
+  component: Portfolio
+})
+
 const contactRoute = new Route({
   getParentRoute: () => rootRoute,
   path: '/contact',
   component: Contact
 })
 
-const routeTree = rootRoute.addChildren([homeRoute, contactRoute]);
+const aboutRoute = new Route({
+  getParentRoute: () => rootRoute,
+  path: '/about',
+  component: About
+})
+
+const routeTree = rootRoute.addChildren([homeRoute, portfolioRoute, aboutRoute, contactRoute]);
 
 const router = new Router({ routeTree });
 
