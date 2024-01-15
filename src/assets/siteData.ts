@@ -1,4 +1,10 @@
+import parKing1 from './images/parKing-home.png';
+import parKing2 from './images/parKing-map.png';
+import parKing3 from './images/parKing-analytics.png';
 
+import webCountry1 from './images/webCountry-home.png'
+import webCountry2 from './images/webCountry-pagination.png'
+import webCountry3 from './images/webCountry-chart.png'
 
 export const ICONS:string[] = [
   'https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black',
@@ -31,3 +37,35 @@ export const NavLinks:NavLink[] = [
     link: '/contact'
   }
 ];
+
+export type Project = {
+  name: string,
+  stack: string,
+  description: string,
+  link: string,
+  images: string[]
+}
+
+export const Projects:Project[] = [
+  {
+    name: 'parKing',
+    stack: 'React | Supabase | Redux',
+    description: 'A SaaS application to optimize car parking and valet interactions. ParKing serves high-traffic metropolitan areas, where parking logistics are often cumbersome and time consuming.',
+    link: '/',
+    images: [parKing1, parKing2, parKing3]
+  },
+  {
+    name: 'Atelier',
+    stack: 'React | MongoDB | Express',
+    description: 'Atelier is a landing page for an e-commerce site that boasts over 15 million products.',
+    link: '',
+    images: []
+  },
+  {
+    name: 'WebCountry',
+    stack: 'React | Redux | Puppeteer',
+    description: "A web-scraping application that uses the Puppeteer API. Users can track information on Backcountry.com and WebCountry's background service will keep item information up-to-date",
+    link: 'https://github.com/stevkim/scraper',
+    images: [webCountry1, webCountry2, webCountry3]
+  }
+]

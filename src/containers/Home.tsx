@@ -9,7 +9,7 @@ const Home = () => {
   const scroll = useScroll();
 
   return (
-    <section className="relative w-full min-h-[100vh]">
+    <main className="relative w-full min-h-[100vh]">
       <Intro />
       <AboutInfo />
       <TechStack />
@@ -19,7 +19,7 @@ const Home = () => {
         <ContactForm />
       </div>
       {scroll && <Scroll />}
-    </section>
+    </main>
   )
 }
 

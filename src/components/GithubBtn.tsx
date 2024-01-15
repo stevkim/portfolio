@@ -1,6 +1,10 @@
-const GithubBtn = () => {
+interface Props {
+  link: string;
+}
+
+const GithubBtn = ({link}: Props ) => {
   return (
-    <a href=""
+    <a href={link}
       rel="noreferrer"
       target="_blank"
       className="bg-secondary p-2 flex items-center rounded-sm text-xs text-white w-fit cursor-pointer"
