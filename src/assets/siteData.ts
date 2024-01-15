@@ -2,9 +2,13 @@ import parKing1 from './images/parKing-home.png';
 import parKing2 from './images/parKing-map.png';
 import parKing3 from './images/parKing-analytics.png';
 
-import webCountry1 from './images/webCountry-home.png'
-import webCountry2 from './images/webCountry-pagination.png'
-import webCountry3 from './images/webCountry-chart.png'
+import webCountry1 from './images/webCountry-home.png';
+import webCountry2 from './images/webCountry-pagination.png';
+import webCountry3 from './images/webCountry-chart.png';
+
+import atelier1 from './images/atelier-main.png';
+import atelier2 from './images/atelier-page.png';
+import atelier3 from './images/atelier-addreview.png';
 
 export const ICONS:string[] = [
   'https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black',
@@ -51,15 +55,15 @@ export const Projects:Project[] = [
     name: 'parKing',
     stack: 'React | Supabase | Redux',
     description: 'A SaaS application to optimize car parking and valet interactions. ParKing serves high-traffic metropolitan areas, where parking logistics are often cumbersome and time consuming.',
-    link: '/',
+    link: 'https://github.com/pokemon-parKing/parKing-client',
     images: [parKing1, parKing2, parKing3]
   },
   {
     name: 'Atelier',
     stack: 'React | MongoDB | Express',
     description: 'Atelier is a landing page for an e-commerce site that boasts over 15 million products.',
-    link: '',
-    images: []
+    link: 'https://github.com/stevkim/atelier',
+    images: [atelier1, atelier2, atelier3]
   },
   {
     name: 'WebCountry',

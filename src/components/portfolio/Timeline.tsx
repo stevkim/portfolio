@@ -4,7 +4,7 @@ import CheckMark from "./CheckMark";
 
 const Timeline = () => {
   return (
-    <ul className="timeline timeline-vertical timeline-snap-icon max-md:timeline-compact w-full" >
+    <ul className="timeline timeline-vertical timeline-snap-icon timeline-compact w-full" >
       {
         Projects.map((project, index) => {
           return (
