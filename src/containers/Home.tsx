@@ -2,7 +2,7 @@ import Intro from "../components/home/Intro";
 import AboutInfo from "../components/home/AboutInfo";
 import Scroll from "../components/home/Scroll";
 import useScroll from "../hooks/useScroll";
-import TechStack from "../components/home/TechStack";
+import TechStack from "../components/TechStack";
 import ContactForm from "../components/contact/ContactForm";
 
 const Home = () => {

@@ -1,14 +1,16 @@
-import parKing1 from './images/parKing-home.png';
-import parKing2 from './images/parKing-map.png';
-import parKing3 from './images/parKing-analytics.png';
+import parKing from './images/parKing.png';
+import webCountry from './images/webcountry.png';
+import atelier from './images/atelier.png';
+import wedding from './images/wedding.png';
+import calendar from './images/calendar.png';
 
-import webCountry1 from './images/webCountry-home.png';
-import webCountry2 from './images/webCountry-pagination.png';
-import webCountry3 from './images/webCountry-chart.png';
-
-import atelier1 from './images/atelier-main.png';
-import atelier2 from './images/atelier-page.png';
-import atelier3 from './images/atelier-addreview.png';
+export const CurrentStackList:string[] = [
+  'Typescript',
+  'React',
+  'Redux',
+  'TanStack',
+  'Supabase'
+]
 
 export const ICONS:string[] = [
   'https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black',
@@ -47,7 +49,7 @@ export type Project = {
   stack: string,
   description: string,
   link: string,
-  images: string[]
+  image: string
 }
 
 export const Projects:Project[] = [
@@ -56,20 +58,34 @@ export const Projects:Project[] = [
     stack: 'React | Supabase | Redux',
     description: 'A SaaS application to optimize car parking and valet interactions. ParKing serves high-traffic metropolitan areas, where parking logistics are often cumbersome and time consuming.',
     link: 'https://github.com/pokemon-parKing/parKing-client',
-    images: [parKing1, parKing2, parKing3]
+    image: parKing
   },
   {
     name: 'Atelier',
     stack: 'React | MongoDB | Express',
-    description: 'Atelier is a landing page for an e-commerce site that boasts over 15 million products.',
+    description: 'Atelier is a landing page for an e-commerce site that boasts over 15 million products. The client-side highlights an infinite scroll feature while server manages a database holding over 5gbs of product data.',
     link: 'https://github.com/stevkim/atelier',
-    images: [atelier1, atelier2, atelier3]
+    image: atelier
   },
   {
     name: 'WebCountry',
     stack: 'React | Redux | Puppeteer',
     description: "A web-scraping application that uses the Puppeteer API. Users can track information on Backcountry.com and WebCountry's background service will keep item information up-to-date",
     link: 'https://github.com/stevkim/scraper',
-    images: [webCountry1, webCountry2, webCountry3]
+    image: webCountry
+  },
+  {
+    name: 'S & S',
+    stack: 'React | React-Router | Tailwind CSS',
+    description: "A wedding site used as an itinerary @ our wedding on July 9, 2023 that served a guest list of 100 people. Designed as a mobile site, then later optimized for web. Deployed using Github pages",
+    link: 'https://github.com/stevkim/wedding',
+    image: wedding
+  },
+  {
+    name: 'Google Calendar Clone',
+    stack: 'React | Typescript | CSS',
+    description: 'A minimal google calendar clone, written in Typescript. The user may create events and select a color to coordinate the events. Data is stored in local storage and persisted.',
+    link: 'https://github.com/stevkim/calendar-clone',
+    image: calendar
   }
 ]
