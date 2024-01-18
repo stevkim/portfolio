@@ -1,7 +1,7 @@
 import { useState, useCallback, useEffect } from "react";
 
 const useResize = () => {
-  const [size, setSize] = useState(false);
+  const [size, setSize] = useState(window.innerWidth > 768);
 
   const handleResize = useCallback(() => {
     if (window.innerWidth > 768)  {
