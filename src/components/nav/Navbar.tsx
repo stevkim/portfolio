@@ -1,20 +1,20 @@
-import NavLink from './NavLink';
 import ToggleTheme from './ToggleTheme';
-import { NavLinks } from '../../assets/siteData';
 import { Link } from '@tanstack/react-router';
+import MobileNav from './MobileNav';
+import { useState } from "react";
+import useResize from '../../hooks/useResize';
+import NavLinkList from './NavLinkList';
 
 const Navbar = () => {
+  const [open, setOpen] = useState(false);
+  const resize = useResize();
+
   return (
-    <nav className="navbar bg-base-100 px-[10%]">
+    <nav className="navbar bg-base-200 px-[5%] md:px-[10%] relative z-20">
       <Link to='/' className="text-2xl hover:rotate-[-10deg] transition-all font-semibold">SK</Link>
-      <div className='flex flex-row gap-6 mr-6 ml-auto'>
-        {
-          NavLinks.map(nav => {
-            return <NavLink key={nav.link} input={nav}/>
-          })
-        }
-      </div>
+      {resize && <NavLinkList />}
       <ToggleTheme />
+      {!resize && <MobileNav open={open} setOpen={setOpen}/>}
     </nav>
   );
 }
