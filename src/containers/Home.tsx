@@ -4,20 +4,33 @@ import Scroll from "../components/home/Scroll";
 import useScroll from "../hooks/useScroll";
 import TechStack from "../components/TechStack";
 import ContactForm from "../components/contact/ContactForm";
+import HeroProjects from "../components/home/HeroProjects";
+import { motion } from 'framer-motion';
 
 const Home = () => {
   const scroll = useScroll();
 
   return (
-    <main className="relative w-full min-h-[100vh]">
+    <main className="relative w-full min-h-[90vh]">
       <Intro />
       <AboutInfo />
-      <TechStack />
-      <div
-        className="flex flex-col gap-8 items-center max-w-[600px] w-[90%] mx-auto my-20"
+      <motion.div
+        initial={{ y: 200 }}
+        whileInView={{ y: 0 }}
+        viewport={{ once: true }}
+        className="my-20"
+      >
+        <TechStack />
+      </motion.div>
+      <HeroProjects />
+      <motion.div
+        initial={{ y: 200 }}
+        whileInView={{ y: 0 }}
+        viewport={{ once: true }}
+        className="flex flex-col gap-8 items-center w-full mx-auto my-20"
       >
         <ContactForm />
-      </div>
+      </motion.div>
       {scroll && <Scroll />}
     </main>
   )

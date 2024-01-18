@@ -15,6 +15,12 @@ const NavLink = ({ input }:Props) => {
       className='w-fit relative z-10'
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
+      activeProps={{
+        style: {
+          color: 'oklch(var(--a))',
+          fontWeight: 'bold'
+        }
+      }}
     >
       <div className='relative z-10 px-3'>{input.name}</div>
       <div className='absolute w-full h-[15%] bottom-[5%] overflow-hidden'>

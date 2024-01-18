@@ -8,7 +8,7 @@ const TechStack = () => {
         <div className='grid grid-cols-3 gap-2'>
           {
             ICONS.map(url => {
-              return <img className='mx-auto' key={url} src={url} alt='Tech Stack Badge' />
+              return <img width='120' height='80' className='mx-auto' key={url} src={url} alt='Tech Stack Badge' />
             })
           }
         </div>

@@ -12,7 +12,7 @@ export type InputChange = {
   input: string
 }
 
-interface UserInput {
+export interface UserInput {
   name: string;
   email: string;
   message: string;

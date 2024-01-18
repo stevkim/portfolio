@@ -1,5 +1,5 @@
 import { Projects } from "../../assets/siteData";
-import ProjectCard from "./ProjectCard";
+import TimelineProjectCard from "./TimelineProjectCard";
 import CheckMark from "./CheckMark";
 
 const Timeline = () => {
@@ -8,10 +8,10 @@ const Timeline = () => {
       {
         Projects.map((project, index) => {
           return (
-            <li className="">
+            <li key={project.name} className="">
               {index === 0 ? <></> : <hr />}
               <CheckMark />
-              <ProjectCard key={project.name} project={project} />
+              <TimelineProjectCard key={project.name} project={project} />
               {index === Projects.length - 1 ? <></> : <hr /> }
             </li>
           )

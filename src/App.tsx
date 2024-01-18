@@ -1,6 +1,7 @@
 import Navbar from './components/nav/Navbar';
 import Footer from './components/footer/Footer';
-import { Outlet } from '@tanstack/react-router';
+import { Outlet, ScrollRestoration } from '@tanstack/react-router';
+import { Toaster } from 'react-hot-toast';
 
 function App() {
 
@@ -9,6 +10,8 @@ function App() {
       <Navbar />
       <Outlet />
       <Footer />
+      <ScrollRestoration />
+      <Toaster position='top-center' />
     </>
   )
 }

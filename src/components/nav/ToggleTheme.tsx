@@ -1,21 +1,21 @@
 import { useState, useEffect } from 'react';
 
-type Theme = 'corporate' | 'business';
+type Theme = 'nord' | 'night';
 
 const ToggleTheme = () => {
   const html = document.querySelector('html');
-  const [theme, setTheme] = useState<Theme>('corporate');
+  const [theme, setTheme] = useState<Theme>('nord');
 
   useEffect(() => {
     html?.setAttribute('data-theme', theme);
   }, [theme])
 
   const toggle = () => {
-    if (theme === 'corporate') {
-      return setTheme('business');
+    if (theme === 'nord') {
+      return setTheme('night');
     }
-    if (theme === 'business') {
-      return setTheme('corporate');
+    if (theme === 'night') {
+      return setTheme('nord');
     }
   }
 

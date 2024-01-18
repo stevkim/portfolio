@@ -12,8 +12,10 @@ const Input = ({ type }: Props) => {
 
   return (
     <div className="w-full h-full relative">
-      <div className={`text-primary absolute top-[22%] left-[2%] transition-all ${ active ? 'translate-y-[-140%] translate-x-[-20%]' : ''}`}>{type}</div>
+      <label htmlFor={type} className={`text-primary absolute top-[20%] left-[2%] transition-all ${ active ? 'translate-y-[-140%] translate-x-[-20%]' : ''}`}>{type}</label>
       <input
+        id={type}
+        name={type}
         required
         type={type === 'email' ? 'email' : 'text'}
         className="border-2 w-full p-2 outline-transparent"
