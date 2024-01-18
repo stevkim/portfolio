@@ -1,3 +1,4 @@
+import ResumeBtn from '../components/ResumeBtn';
 import TechStack from '../components/TechStack';
 import AboutMe from '../components/about/AboutMe';
 import CurrentStack from '../components/about/CurrentStack';

@@ -1,5 +1,5 @@
 import Input from "./Input";
-import TextArea from "./TextArea";
+import MessageInput from "./MessageInput";
 import SubmitBtn from "./SubmitBtn";
 import { useAppSelector, useAppDispatch } from "../../lib/hooks";
 import sendEmail from '../../lib/sendEmail';
@@ -35,7 +35,7 @@ const ContactForm = () => {
       <h2 className="text-lg mt-2">if you're interesting in getting in contact, let's connect!</h2>
       <Input type='name' />
       <Input type='email' />
-      <TextArea type='message' />
+      <MessageInput />
       <SubmitBtn />
     </form>
   );

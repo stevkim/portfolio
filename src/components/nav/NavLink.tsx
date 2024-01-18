@@ -18,7 +18,6 @@ const NavLink = ({ input }:Props) => {
       activeProps={{
         style: {
           color: 'oklch(var(--a))',
-          fontWeight: 'bold'
         }
       }}
     >
