@@ -8,6 +8,8 @@ This project is a personal portfolio! I wanted to showcase my ability to code as
 
 Deployed with Netlify - <a href='https://stevkim.dev/' target='_blank'>https://stevkim.dev</a>
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/f4aa3675-9264-419b-93ef-ca1000375bfd/deploy-status)](https://app.netlify.com/sites/melodious-dusk-a15198/deploys)
+
 ## Tech Stack
 ![Typescript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
