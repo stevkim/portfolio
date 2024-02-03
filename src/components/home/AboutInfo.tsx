@@ -9,7 +9,7 @@ const AboutInfo = () => {
       viewport={{ once: true }}
       className="my-20 text-center flex flex-col items-center gap-4"
     >
-      <h3 className="text-3xl font-semibold">a little about me</h3>
+      <h3 className="text-3xl font-semibold">a little about me.</h3>
       <p className=" w-[90%] max-w-[600px] text-lg">
         I'm a Software Engineer who recently graduated
         from a 3-month coding bootcamp called Hack Reactor,

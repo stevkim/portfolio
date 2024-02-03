@@ -14,7 +14,7 @@ const HeroProjects = () => {
       viewport={{ once: true }}
       className="w-full flex flex-col gap-8 items-center justify-center p-2 md:p-20"
     >
-      <h3 className="text-3xl font-semibold">projects</h3>
+      <h3 className="text-3xl font-semibold">projects.</h3>
       {
         projectList.map((project) => {
           return <HeroProjectCard key={project.name} project={project} />
