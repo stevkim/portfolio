@@ -23,6 +23,20 @@ Deployed with Netlify - <a href='https://stevkim.dev/' target='_blank'>https://s
 - <a href='https://react-hot-toast.com/' target='_blank'>React-Hot-Toast</a> - alert message
 - <a href='https://www.emailjs.com/' target='_blank'>Emailjs</a> - contact mailing
 
+### Features
+- [x] Set up redux for state management, most for contact form - 1/12/24
+- [x] Configure routing with TanStack Router - 1/13/24
+- [x] Animations done with Framer-motion - 1/17/24
+- [x] Contact email feature - make sure i get an email when someone fills the form out - 1/17/24
+- [x] Optimize for mobile using breakpoints - 1/17/24
+- [x] Add a way for viewer to also get/see my resume - 1/17/24
+- [x] Compress images for optimized loading - 1/17/24
+
+### Features to Add
+- [ ] Migrate from DaisyUI components to Shadcn for more consistency in components
+- [ ] Look over the overall layout and fix margins to have a more consistent flow
+- [ ] Hover effect for project cards to play gifs? -- Still need to figure out how i want to do this
+- [ ] A more attention-grabbing load page?
 
 ## Mobile View
 <img src='https://github.com/stevkim/portfolio/blob/main/gifs/mobile.gif' />
