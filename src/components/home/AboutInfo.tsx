@@ -20,7 +20,7 @@ const AboutInfo = () => {
       <p className=" w-[90%] max-w-[600px] text-lg">
         I have Full-Stack experience, with a strong focus on the Front-end. Mainly in the React/Typescript ecosystem.
       </p>
-      <Link className="btn btn-primary" to="/about">more about me.</Link>
+      <Link className="btn btn-primary" to="/about">more about me</Link>
     </motion.section>
   )
 }

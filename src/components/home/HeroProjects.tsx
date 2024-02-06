@@ -20,7 +20,7 @@ const HeroProjects = () => {
           return <HeroProjectCard key={project.name} project={project} />
         })
       }
-      <Link className="btn btn-primary" to="/portfolio">see more projects.</Link>
+      <Link className="btn btn-primary" to="/portfolio">see more projects</Link>
     </motion.section>
   )
 }

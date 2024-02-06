@@ -21,7 +21,7 @@ const NavLink = ({ input }:Props) => {
         }
       }}
     >
-      <div className='relative z-10 px-3'>{input.name}</div>
+      <div className='relative z-10 px-3 pb-[4px]'>{input.name}</div>
       <div className='absolute w-full h-[15%] bottom-[5%] overflow-hidden'>
         <div className={`${hover ? 'nav-hover' : ''} nav-link w-full h-full`}></div>
       </div>
