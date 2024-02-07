@@ -1,3 +1,5 @@
+import SkillIcon from "../SkillIcon";
+
 interface Props {
   projectName: string;
   skills: string[];
@@ -7,9 +9,10 @@ const UsedStack = ({ projectName, skills }:Props) => (
   <div className="flex gap-2 items-center justify-center">
     {
       skills.map(skill => {
-        return <i key={`${projectName}-${skill}`} className={`devicon-${skill} colored text-3xl`}></i>
+        return <SkillIcon key={`${projectName}-${skill}`} skill={skill} />
       })
     }
   </div>
 )
+
 export default UsedStack;

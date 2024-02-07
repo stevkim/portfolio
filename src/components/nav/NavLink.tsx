@@ -17,7 +17,7 @@ const NavLink = ({ input }:Props) => {
       onMouseLeave={() => setHover(false)}
       activeProps={{
         style: {
-          color: 'oklch(var(--a))',
+          color: 'oklch(var(--p))',
         }
       }}
     >

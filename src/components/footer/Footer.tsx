@@ -1,6 +1,6 @@
 import Badge from "./Badge";
 import GithubBtn from "../GithubBtn";
-import Socials from "./Socials";
+import Socials from "../Socials";
 import SiteLinks from "./SiteLinks";
 
 const Footer = () => {

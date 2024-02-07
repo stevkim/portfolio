@@ -31,7 +31,7 @@ const Home = () => {
       >
         <ContactForm />
       </motion.div>
-      {scroll && <Scroll />}
+      {scroll ? <Scroll /> : null}
     </main>
   )
 }
