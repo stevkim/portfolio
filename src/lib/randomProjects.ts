@@ -1,4 +1,4 @@
-import type { Project } from "../assets/siteData";
+import type { Project } from "../assets/siteDataTypes";
 import { Projects } from "../assets/siteData";
 
 const randomProjects = ():Project[] => {

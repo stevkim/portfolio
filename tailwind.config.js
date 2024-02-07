@@ -9,7 +9,13 @@ export default {
   },
   plugins: [require('daisyui')],
   daisyui: {
-    themes: ['nord', 'night']
+    themes: ['nord', {
+      dim: {
+        ...require('daisyui/src/theming/themes')['dim'],
+        secondary: '#D4F1F4',
+        accent: '#145DA0'
+      }
+    }]
   }
 }
 

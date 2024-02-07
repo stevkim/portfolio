@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-type Theme = 'nord' | 'night';
+type Theme = 'nord' | 'dim';
 
 const ToggleTheme = () => {
   const html = document.querySelector('html');
@@ -12,9 +12,9 @@ const ToggleTheme = () => {
 
   const toggle = () => {
     if (theme === 'nord') {
-      return setTheme('night');
+      return setTheme('dim');
     }
-    if (theme === 'night') {
+    if (theme === 'dim') {
       return setTheme('nord');
     }
   }
