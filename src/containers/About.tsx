@@ -1,8 +1,7 @@
-import TechStack from '../components/TechStack';
 import AboutMe from '../components/about/AboutMe';
-import CurrentStack from '../components/about/CurrentStack';
 import SelfPortrait from '../components/about/SelfPortrait';
-import { motion} from 'framer-motion';
+import { motion } from 'framer-motion';
+import SkillsSection from '../components/skills/SkillsSection';
 
 const About = () => {
   return (
@@ -16,7 +15,6 @@ const About = () => {
           className="lg:w-[50%] w-full flex flex-col gap-4 p-8 my-auto"
         >
           <AboutMe />
-          <CurrentStack />
         </motion.div>
         <motion.div
           initial={{ opacity: 0, x: 200 }}
@@ -27,7 +25,7 @@ const About = () => {
           <SelfPortrait />
         </motion.div>
       </div>
-      <TechStack />
+      <SkillsSection />
     </section>
   )
 }

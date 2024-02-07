@@ -7,7 +7,7 @@ const AboutInfo = () => {
       initial={{ y: 200 }}
       whileInView={{ y: 0 }}
       viewport={{ once: true }}
-      className="my-20 text-center flex flex-col items-center gap-4"
+      className="text-center flex flex-col items-center gap-4"
     >
       <h3 className="text-3xl font-semibold">a little about me.</h3>
       <p className=" w-[90%] max-w-[600px] text-lg">

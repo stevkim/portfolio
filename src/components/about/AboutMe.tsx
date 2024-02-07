@@ -4,7 +4,7 @@ const AboutMe = () => (
   <>
     <p>
       <span className="block">Hello!</span>
-      I'm Steven Kim, a Software Engineer based in Seattle.
+      I'm Steven Kim, a <span className="text-secondary">Software Engineer</span> based in Seattle.
       I have a passion for learning all things tech, but have the most
       experience in Front-end development.
     </p>
@@ -20,7 +20,6 @@ const AboutMe = () => (
       When I'm not looking at my screen, I enjoy rock climbing
       or relaxing with my wife and dog.
     </p>
-    <div className="text-center font-semibold">...</div>
   </>
 )
 

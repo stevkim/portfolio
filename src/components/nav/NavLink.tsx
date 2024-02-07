@@ -1,10 +1,10 @@
 import { Link } from '@tanstack/react-router';
 import { useState } from 'react';
 import './nav.css';
-import type { NavLink } from '../../assets/siteDataTypes';
+import type { TNavLink } from '../../assets/siteDataTypes';
 
 interface Props {
-  input: NavLink
+  input: TNavLink
 }
 
 const NavLink = ({ input }:Props) => {

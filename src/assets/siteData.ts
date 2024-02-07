@@ -1,4 +1,4 @@
-import type { NavLink, Project } from './siteDataTypes';
+import type { TNavLink, TProject, TSkillList } from './siteDataTypes';
 import parKing from './images/parKing.avif';
 import webCountry from './images/webcountry.avif';
 import atelier from './images/atelier.avif';
@@ -20,19 +20,27 @@ export const CurrentStackList:string[] = [
   'Supabase'
 ]
 
-export const ICONS:string[] = [
-  'https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black',
-  'https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white',
-  'https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white',
-  'https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB',
-  'https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white',
-  'https://img.shields.io/badge/Express.js-404D59?style=for-the-badge',
-  'https://img.shields.io/badge/Amazon_AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white',
-  'https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white',
-  'https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white',
-];
+export const IconList:string[] = [
+  'react-original',
+  'supabase-plain',
+  'redux-original',
+  'mongodb-plain',
+  'express-original',
+  'typescript-plain',
+  'javascript-plain',
+  'reactrouter-plain',
+  'tailwindcss-original',
+  'html5-plain',
+  'css3-plain',
+  'amazonwebservices-plain-wordmark',
+  'git-plain',
+  'jest-plain',
+  'mysql-original',
+  'nodejs-plain-wordmark',
+  'socketio-original',
+]
 
-export const NavLinks:NavLink[] = [
+export const NavLinks:TNavLink[] = [
   {
     name: 'portfolio',
     link: '/portfolio',
@@ -47,7 +55,7 @@ export const NavLinks:NavLink[] = [
   }
 ];
 
-export const Projects:Project[] = [
+export const Projects:TProject[] = [
   {
     name: 'parKing',
     stack: ['react-original', 'supabase-plain', 'redux-original'],
@@ -95,5 +103,20 @@ export const Projects:Project[] = [
     link: 'https://github.com/stevkim/calendar-clone',
     image: calendar,
     gif: calendargif
+  }
+]
+
+export const Skills:TSkillList[] = [
+  {
+    section: 'frontend',
+    skills: ['React.js', 'Axios', 'Redux', 'React-Router', 'Tanstack ecosystem', 'Javascript ecosystem', 'Framer']
+  },
+  {
+    section: 'backend',
+    skills: ['MongoDB', 'Supabase', 'Express.js', 'Node.js', 'Nginx', 'Socket.io', 'Mongoose', 'MySQL']
+  },
+  {
+    section: 'tools & concepts',
+    skills: ['Git', 'Jest', 'React Testing Library', 'Vite', 'Agile', 'AWS (EC2)', 'Docker', 'Webpack']
   }
 ]

@@ -1,4 +1,4 @@
-import type { Project } from "../../assets/siteDataTypes"
+import type { TProject } from "../../assets/siteDataTypes"
 import UsedStack from "./UsedStack"
 import { motion } from 'framer-motion'
 import CardBack from "./CardBack"
@@ -10,7 +10,7 @@ type TActive = {
 }
 
 interface Props {
-  project: Project;
+  project: TProject;
   activeState: TActive,
   index: number;
 }

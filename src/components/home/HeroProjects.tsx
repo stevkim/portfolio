@@ -21,7 +21,7 @@ const HeroProjects = () => {
       initial={{ y: 200 }}
       whileInView={{ y: 0 }}
       viewport={{ once: true }}
-      className="w-full flex flex-col gap-8 items-center justify-center p-2 md:p-20"
+      className="w-full flex flex-col gap-8 items-center justify-center p-2"
     >
       <h3 className="text-3xl font-semibold">projects.</h3>
       {

@@ -10,8 +10,8 @@ const Navbar = () => {
   const resize = useResize();
 
   return (
-    <nav className="navbar bg-base-200 px-[5%] md:px-[10%] relative z-20">
-      <Link to='/' className="text-2xl hover:rotate-[-10deg] transition-all font-semibold z-20">SK</Link>
+    <nav className="navbar bg-base-300 px-[5%] md:px-[15%] relative z-20 shadow-md">
+      <Link to='/' className="text-2xl hover:rotate-[-10deg] transition-all font-semibold z-20 hover:text-primary">SK</Link>
       {resize && <NavLinkList />}
       <ToggleTheme />
       {!resize && <MobileNav open={open} setOpen={setOpen}/>}

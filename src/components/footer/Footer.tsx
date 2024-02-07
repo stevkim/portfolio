@@ -1,7 +1,6 @@
 import Badge from "./Badge";
 import GithubBtn from "../GithubBtn";
 import Socials from "../Socials";
-import SiteLinks from "./SiteLinks";
 
 const Footer = () => {
   return (
@@ -10,9 +9,9 @@ const Footer = () => {
         <Badge />
         <GithubBtn link='https://github.com/stevkim/portfolio' />
       </div>
-      <div className="md:w-[50%] w-full flex flex-col">
+      <div className="md:w-[50%] w-full flex flex-col gap-2">
+        <h4 className="ml-auto w-fit h-fit bg-accent p-2 text-white text-sm pointer-events-none">my social links</h4>
         <Socials />
-        <SiteLinks />
       </div>
     </footer>
   )
