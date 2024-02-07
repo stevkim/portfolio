@@ -1,3 +1,4 @@
+import type { NavLink, Project } from './siteDataTypes';
 import parKing from './images/parKing.avif';
 import webCountry from './images/webcountry.avif';
 import atelier from './images/atelier.avif';
@@ -29,11 +30,6 @@ export const ICONS:string[] = [
   'https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white',
 ];
 
-export type NavLink = {
-  name: string,
-  link: string
-}
-
 export const NavLinks:NavLink[] = [
   {
     name: 'portfolio',
@@ -48,15 +44,6 @@ export const NavLinks:NavLink[] = [
     link: '/contact'
   }
 ];
-
-export type Project = {
-  name: string,
-  stack: string[],
-  description: string,
-  link: string,
-  image: string,
-  gif?: string,
-}
 
 export const Projects:Project[] = [
   {

@@ -1,4 +1,4 @@
-import type { Project } from "../../assets/siteData";
+import type { Project } from "../../assets/siteDataTypes";
 import GithubBtn from "../GithubBtn";
 import { motion } from 'framer-motion';
 

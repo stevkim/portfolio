@@ -1,7 +1,7 @@
 import { Link } from '@tanstack/react-router';
 import { useState } from 'react';
 import './nav.css';
-import type { NavLink } from '../../assets/siteData';
+import type { NavLink } from '../../assets/siteDataTypes';
 
 interface Props {
   input: NavLink

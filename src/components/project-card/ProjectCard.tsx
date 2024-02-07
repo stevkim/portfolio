@@ -1,4 +1,4 @@
-import type { Project } from "../../assets/siteData"
+import type { Project } from "../../assets/siteDataTypes"
 import UsedStack from "./UsedStack"
 import { motion } from 'framer-motion'
 import CardBack from "./CardBack"
