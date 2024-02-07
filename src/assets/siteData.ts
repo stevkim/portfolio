@@ -4,6 +4,10 @@ import atelier from './images/atelier.avif';
 import wedding from './images/wedding.avif';
 import calendar from './images/calendar.avif';
 import moovi from './images/moovi.avif';
+import moovigif from './gifs/moovi.gif';
+import ateliergif from './gifs/atelier.gif'
+import weddinggif from './gifs/wedding.gif'
+import parkinggif from './gifs/parKing.gif'
 
 export const CurrentStackList:string[] = [
   'Typescript',
@@ -47,53 +51,58 @@ export const NavLinks:NavLink[] = [
 
 export type Project = {
   name: string,
-  stack: string,
+  stack: string[],
   description: string,
   link: string,
-  image: string
+  image: string,
+  gif?: string,
 }
 
 export const Projects:Project[] = [
   {
     name: 'parKing',
-    stack: 'React | Supabase | Redux',
+    stack: ['react-original', 'supabase-plain', 'redux-original'],
     description: 'A SaaS application to optimize car parking and valet interactions. Developed with high-traffic metropolitan areas in mind.',
     link: 'https://github.com/pokemon-parKing/parKing-client',
-    image: parKing
+    image: parKing,
+    gif: parkinggif
   },
   {
     name: 'Atelier',
-    stack: 'React | MongoDB | Express',
+    stack: ['react-original', 'mongodb-plain', 'express-original'],
     description: 'An e-commerce landing page that highlights an infinite scroll feature with a backend that optimizes queries for over 5 million products.',
     link: 'https://github.com/stevkim/atelier',
-    image: atelier
+    image: atelier,
+    gif: ateliergif
   },
   {
     name: 'WebCountry',
-    stack: 'React | Redux | Puppeteer',
+    stack: ['react-original', 'redux-original', 'puppeteer-plain'],
     description: "A web-scraping application, users can track information on Backcountry.com and an internal service will keep item information up-to-date",
     link: 'https://github.com/stevkim/scraper',
     image: webCountry
   },
   {
     name: 'Moovi',
-    stack: 'Typescript | React | JWT',
+    stack: ['typescript-plain', 'react-original', 'framermotion-original'],
     description: 'A pinterest-like media application to search, browse and save movies or tv-shows for later.',
     link: 'https://github.com/stevkim/movie-project',
-    image: moovi
+    image: moovi,
+    gif: moovigif
   },
   {
     name: 'S & S',
-    stack: 'React | React-Router | Tailwind CSS',
+    stack: ['react-original', 'reactrouter-plain', 'tailwindcss-original'],
     description: "A wedding site used as an itinerary @ my wedding on July 9, 2023 that served a guest list of 100 people.",
     link: 'https://github.com/stevkim/wedding',
-    image: wedding
+    image: wedding,
+    gif: weddinggif
   },
   {
     name: 'Google Calendar Clone',
-    stack: 'React | Typescript | CSS',
+    stack: ['react-original', 'typescript-plain', 'css3-plain'],
     description: 'A minimal google calendar clone, written in Typescript. Data is stored in local storage and persisted.',
     link: 'https://github.com/stevkim/calendar-clone',
-    image: calendar
+    image: calendar,
   }
 ]
