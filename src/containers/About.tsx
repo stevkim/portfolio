@@ -22,7 +22,7 @@ const About = () => {
           initial={{ opacity: 0, x: 200 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
-          className="lg:w-[50%] w-full p-10 lg:p-20 flex items-start justify-center"
+          className="lg:w-[50%] w-full p-10 xl:p-20 flex items-start justify-center"
         >
           <SelfPortrait />
         </motion.div>

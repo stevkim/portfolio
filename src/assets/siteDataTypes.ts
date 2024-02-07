@@ -9,5 +9,5 @@ export type Project = {
   description: string,
   link: string,
   image: string,
-  gif?: string,
+  gif: string,
 }

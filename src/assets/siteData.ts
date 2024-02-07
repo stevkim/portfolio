@@ -9,6 +9,8 @@ import moovigif from './gifs/moovi.gif';
 import ateliergif from './gifs/atelier.gif'
 import weddinggif from './gifs/wedding.gif'
 import parkinggif from './gifs/parKing.gif'
+import calendargif from './gifs/calendar.gif';
+import webcountrygif from './gifs/webcountry.gif';
 
 export const CurrentStackList:string[] = [
   'Typescript',
@@ -67,7 +69,8 @@ export const Projects:Project[] = [
     stack: ['react-original', 'redux-original', 'puppeteer-plain'],
     description: "A web-scraping application, users can track information on Backcountry.com and an internal service will keep item information up-to-date",
     link: 'https://github.com/stevkim/scraper',
-    image: webCountry
+    image: webCountry,
+    gif: webcountrygif
   },
   {
     name: 'Moovi',
@@ -91,5 +94,6 @@ export const Projects:Project[] = [
     description: 'A minimal google calendar clone, written in Typescript. Data is stored in local storage and persisted.',
     link: 'https://github.com/stevkim/calendar-clone',
     image: calendar,
+    gif: calendargif
   }
 ]
