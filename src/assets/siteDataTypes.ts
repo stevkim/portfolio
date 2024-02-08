@@ -10,6 +10,7 @@ export type TProject = {
   link: string,
   image: string,
   gif: string,
+  deployed?: string
 }
 
 export type TSkillList = {

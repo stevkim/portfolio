@@ -5,7 +5,6 @@ import useScroll from "../hooks/useScroll";
 import ContactForm from "../components/contact/ContactForm";
 import HeroProjects from "../components/home/HeroProjects";
 import TechStackList from "../components/home/TechStackList";
-import { motion } from 'framer-motion';
 import BackToTopBtn from "../components/home/BackToTopBtn";
 
 const Home = () => {

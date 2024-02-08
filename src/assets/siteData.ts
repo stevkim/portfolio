@@ -59,7 +59,7 @@ export const Projects:TProject[] = [
   {
     name: 'parKing',
     stack: ['react-original', 'supabase-plain', 'redux-original'],
-    description: 'A SaaS application to optimize car parking and valet interactions in high-traffic metropolitan areas. With my role as the tech lead for this project, I was able to practice project management and spearhead the integration of different features. My responsibilities included project design, scope, and backend systems.',
+    description: 'A SaaS application aimed at optimizing car parking and valet interactions in bustling metropolitan areas. As the technical lead, I took charge of project management, steering the integration of diverse features. My responsibilities encompassed project design, defining scope, and the development of backend systems.',
     link: 'https://github.com/pokemon-parKing/parKing-client',
     image: parKing,
     gif: parkinggif
@@ -67,7 +67,7 @@ export const Projects:TProject[] = [
   {
     name: 'Atelier',
     stack: ['react-original', 'mongodb-plain', 'express-original'],
-    description: 'A landing page for an e-commerce site with over 5 million products. Key features for the front-end include an infinite scroll, optimized with a custom React throttle hook. The backend boasts an average response times of 200ms with 0% error rates for queries to a database holding 15 million documents.',
+    description: 'A landing page for an e-commerce site with 5 million+ products, the project includes a smooth infinite scroll, optimized with a custom React throttle hook. Backend performance excels with a 200ms response time and a flawless 0% error rate for queries to a database housing 15 million documents.',
     link: 'https://github.com/stevkim/atelier',
     image: atelier,
     gif: ateliergif
@@ -75,7 +75,7 @@ export const Projects:TProject[] = [
   {
     name: 'WebCountry',
     stack: ['react-original', 'redux-original', 'puppeteer-plain'],
-    description: "A web-scraping application for users to track information on Backcountry.com. Utilizing Puppeteer, I created a background service to scrape products at set times every day. Scraped information is stored in a database to track price trends.",
+    description: "A web-scraping application using Puppeteer to enable users to track information on Backcountry.com. I implemented a background service to perform automated product scraping at scheduled intervals each day. The extracted data is then stored in a database, allowing users to monitor and analyze price trends over time.",
     link: 'https://github.com/stevkim/scraper',
     image: webCountry,
     gif: webcountrygif
@@ -83,7 +83,7 @@ export const Projects:TProject[] = [
   {
     name: 'Moovi',
     stack: ['typescript-plain', 'react-original', 'framermotion-original'],
-    description: "A pinterest-like media application to search, browse and save movies or tv-shows for later. The project uses the MovieAPI and stores user data in a database. This project's key feature is the custom authentication system, where a JWT token is stored in the user's cookies and verified on the backend. ",
+    description: "A Pinterest-inspired media application allowing users to search, browse, and save movies or TV shows for later. Leveraging the MovieAPI, the project incorporates a robust database to store user data. A standout feature is a custom authentication system, securing user data with a JWT token stored in cookies and verified on the backend",
     link: 'https://github.com/stevkim/movie-project',
     image: moovi,
     gif: moovigif
@@ -91,15 +91,16 @@ export const Projects:TProject[] = [
   {
     name: 'S & S',
     stack: ['react-original', 'reactrouter-plain', 'tailwindcss-original'],
-    description: "A wedding site used as an itinerary @ my wedding on July 9, 2023. The project has fluid animations using the Framer library and was developed with the mobile first design pattern. The project successfully catered to 100 guests at the wedding, receiving positive feedback.",
+    description: "A wedding site used as an itinerary for my July 9, 2023 celebration, featuring fluid animations powered by the Framer library. Developed with a mobile-first design pattern, the project seamlessly accommodated 100 guests, garnering positive feedback for its engaging and user-friendly experience.",
     link: 'https://github.com/stevkim/wedding',
     image: wedding,
-    gif: weddinggif
+    gif: weddinggif,
+    deployed: 'https://stevkim.github.io/wedding/'
   },
   {
     name: 'Google Calendar Clone',
     stack: ['react-original', 'typescript-plain', 'css3-plain'],
-    description: 'A minimal google calendar clone, this was my first project using Typescript and exploring data persistence. Data is stored in localStorage and rendered individually by day.',
+    description: 'A minimal Google Calendar clone, this was my first project using Typescript and exploring data persistence. The user can navigate to precise days and create and store events. The event data is then stored in localStorage with proper keys for data integrity.',
     link: 'https://github.com/stevkim/calendar-clone',
     image: calendar,
     gif: calendargif
@@ -109,7 +110,7 @@ export const Projects:TProject[] = [
 export const Skills:TSkillList[] = [
   {
     section: 'frontend',
-    skills: ['React.js', 'Axios', 'Redux', 'React-Router', 'Tanstack ecosystem', 'Javascript ecosystem', 'Framer']
+    skills: ['React.js', 'Axios', 'Redux', 'Framer', 'React-Router', 'Tanstack ecosystem', 'Javascript ecosystem', 'TailwindCSS']
   },
   {
     section: 'backend',
@@ -117,6 +118,6 @@ export const Skills:TSkillList[] = [
   },
   {
     section: 'tools & concepts',
-    skills: ['Git', 'Jest', 'React Testing Library', 'Vite', 'Agile', 'AWS (EC2)', 'Docker', 'Webpack']
+    skills: ['Git', 'Jest', 'React Testing Library', 'Vite', 'Agile', 'AWS (EC2)', 'Docker', 'Webpack', 'Mocha']
   }
 ]
