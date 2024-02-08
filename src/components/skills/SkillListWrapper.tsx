@@ -22,7 +22,7 @@ const SkillListWrapper = ({ skillList, index }:Props) => {
         {section}
         <span className="ml-4 text-sm text-accent-content">.0{index + 1}</span>
       </h4>
-      <div className="flex flex-wrap gap-1">
+      <div className="flex flex-wrap gap-x-1 gap-y-4">
         {
           skills.map(skill => <SkillBadge key={skill} skill={skill} />)
         }

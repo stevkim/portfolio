@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 import randomProjects from "../../lib/randomProjects";
 import { useMemo, useState } from "react";
 import { motion } from 'framer-motion';
-import ProjectCard from "../project-card/ProjectCard";
+import ProjectCard from "../project-list/ProjectCard";
 
 const HeroProjects = () => {
   const projectList = useMemo(() => randomProjects(), []);

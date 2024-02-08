@@ -3,22 +3,15 @@
 const AboutMe = () => (
   <>
     <p>
-      <span className="block">Hello!</span>
-      I'm Steven Kim, a <span className="text-secondary">Software Engineer</span> based in Seattle.
-      I have a passion for learning all things tech, but have the most
-      experience in Front-end development.
+      Hello! I'm Steven Kim, a <span className="highlight">Software Engineer</span> based in Seattle. What sets me apart is my unwavering commitment to continuous learning in the ever-evolving tech landscape.
     </p>
-    <div className="text-center font-semibold">...</div>
     <p>
-      Before finding my passion for programming, I spent
-      10 years teaching martial arts, Taekwondo to be exact!
-      I had the privilege of working with many people from
-      different walks of life, as well as coaching a team to
-      win Gold at Nationals!
+      My journey into tech is complemented by a decade-long background in teaching martial arts. Not only did I coach a team to win Gold at Nationals, but this experience cultivated my interpersonal and leadership skills. It fostered my ability to work collaboratively with diverse individuals, a strength I can bring to any team.
     </p>
+    <div className="text-center">...</div>
     <p>
       When I'm not looking at my screen, I enjoy rock climbing
-      or relaxing with my wife and dog.
+      or relishing quiet moments with my wife and dog.
     </p>
   </>
 )

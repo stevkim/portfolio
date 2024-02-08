@@ -1,4 +1,4 @@
-import ProjectList from "../components/project-card/ProjectList";
+import ProjectList from "../components/project-list/ProjectList";
 
 const Portfolio = () => {
   return (

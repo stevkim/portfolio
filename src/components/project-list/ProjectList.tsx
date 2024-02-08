@@ -14,7 +14,7 @@ const ProjectList = () => {
   }
 
   return (
-    <section className="flex flex-wrap flex-row justify-center gap-4 w-[90%] max-w-[1250px]">
+    <section className="flex flex-wrap flex-row justify-center gap-6 w-[90%] max-w-[1250px]">
       {
         Projects.map(((project, index) => {
           return <ProjectCard key={project.name} project={project} activeState={{ active, handleActive }} index={index} />

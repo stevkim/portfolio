@@ -6,6 +6,7 @@ import ContactForm from "../components/contact/ContactForm";
 import HeroProjects from "../components/home/HeroProjects";
 import TechStackList from "../components/home/TechStackList";
 import { motion } from 'framer-motion';
+import BackToTopBtn from "../components/home/BackToTopBtn";
 
 const Home = () => {
   const scroll = useScroll();
@@ -16,15 +17,8 @@ const Home = () => {
       <AboutInfo />
       <TechStackList />
       <HeroProjects />
-      <motion.div
-        initial={{ y: 200 }}
-        whileInView={{ y: 0 }}
-        viewport={{ once: true }}
-        className="flex flex-col gap-8 items-center w-full mx-auto"
-      >
-        <ContactForm />
-      </motion.div>
-      {scroll ? <Scroll /> : null}
+      <ContactForm />
+      {scroll ? <Scroll /> : <BackToTopBtn />}
     </main>
   )
 }

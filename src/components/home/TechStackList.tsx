@@ -16,7 +16,7 @@ const TechStackList = () => {
             transition={{ type: 'linear', delay: index * 0.1 }}
             viewport={{ once: true }}
           >
-            <SkillIcon skill={icon} size={5}/>
+            <SkillIcon skill={icon} size={3}/>
           </motion.div>
         )
         })

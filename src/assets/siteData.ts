@@ -59,7 +59,7 @@ export const Projects:TProject[] = [
   {
     name: 'parKing',
     stack: ['react-original', 'supabase-plain', 'redux-original'],
-    description: 'A SaaS application to optimize car parking and valet interactions. Developed with high-traffic metropolitan areas in mind.',
+    description: 'A SaaS application to optimize car parking and valet interactions in high-traffic metropolitan areas. With my role as the tech lead for this project, I was able to practice project management and spearhead the integration of different features. My responsibilities included project design, scope, and backend systems.',
     link: 'https://github.com/pokemon-parKing/parKing-client',
     image: parKing,
     gif: parkinggif
@@ -67,7 +67,7 @@ export const Projects:TProject[] = [
   {
     name: 'Atelier',
     stack: ['react-original', 'mongodb-plain', 'express-original'],
-    description: 'An e-commerce landing page that highlights an infinite scroll feature with a backend that optimizes queries for over 5 million products.',
+    description: 'A landing page for an e-commerce site with over 5 million products. Key features for the front-end include an infinite scroll, optimized with a custom React throttle hook. The backend boasts an average response times of 200ms with 0% error rates for queries to a database holding 15 million documents.',
     link: 'https://github.com/stevkim/atelier',
     image: atelier,
     gif: ateliergif
@@ -75,7 +75,7 @@ export const Projects:TProject[] = [
   {
     name: 'WebCountry',
     stack: ['react-original', 'redux-original', 'puppeteer-plain'],
-    description: "A web-scraping application, users can track information on Backcountry.com and an internal service will keep item information up-to-date",
+    description: "A web-scraping application for users to track information on Backcountry.com. Utilizing Puppeteer, I created a background service to scrape products at set times every day. Scraped information is stored in a database to track price trends.",
     link: 'https://github.com/stevkim/scraper',
     image: webCountry,
     gif: webcountrygif
@@ -83,7 +83,7 @@ export const Projects:TProject[] = [
   {
     name: 'Moovi',
     stack: ['typescript-plain', 'react-original', 'framermotion-original'],
-    description: 'A pinterest-like media application to search, browse and save movies or tv-shows for later.',
+    description: "A pinterest-like media application to search, browse and save movies or tv-shows for later. The project uses the MovieAPI and stores user data in a database. This project's key feature is the custom authentication system, where a JWT token is stored in the user's cookies and verified on the backend. ",
     link: 'https://github.com/stevkim/movie-project',
     image: moovi,
     gif: moovigif
@@ -91,7 +91,7 @@ export const Projects:TProject[] = [
   {
     name: 'S & S',
     stack: ['react-original', 'reactrouter-plain', 'tailwindcss-original'],
-    description: "A wedding site used as an itinerary @ my wedding on July 9, 2023 that served a guest list of 100 people.",
+    description: "A wedding site used as an itinerary @ my wedding on July 9, 2023. The project has fluid animations using the Framer library and was developed with the mobile first design pattern. The project successfully catered to 100 guests at the wedding, receiving positive feedback.",
     link: 'https://github.com/stevkim/wedding',
     image: wedding,
     gif: weddinggif
@@ -99,7 +99,7 @@ export const Projects:TProject[] = [
   {
     name: 'Google Calendar Clone',
     stack: ['react-original', 'typescript-plain', 'css3-plain'],
-    description: 'A minimal google calendar clone, written in Typescript. Data is stored in local storage and persisted.',
+    description: 'A minimal google calendar clone, this was my first project using Typescript and exploring data persistence. Data is stored in localStorage and rendered individually by day.',
     link: 'https://github.com/stevkim/calendar-clone',
     image: calendar,
     gif: calendargif

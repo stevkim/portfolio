@@ -10,7 +10,7 @@ const SkillIcon = ({ skill, size }:Props) => {
 
   return (
       <i
-        className={`devicon-${skill} ${hover ? 'colored scale-125' : ''} text-${size}xl`}
+        className={`devicon-${skill} ${hover ? 'colored scale-125' : ''} text-[${size}rem]`}
         onMouseEnter={() => setHover(true)}
         onMouseLeave={() => setHover(false)}>
       </i>
