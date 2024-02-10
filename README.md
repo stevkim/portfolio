@@ -31,12 +31,16 @@ Deployed with Netlify - <a href='https://stevkim.dev/' target='_blank'>https://s
 - [x] Optimize for mobile using breakpoints - 1/17/24
 - [x] Add a way for viewer to also get/see my resume - 1/17/24
 - [x] Compress images for optimized loading - 1/17/24
+- [x] ~~Migrate from DaisyUI components to Shadcn for more consistency in components~~ Created custom components for project cards, with a feature to flip and show a gif!
+- [x] Look over the overall layout and fix margins to have a more consistent flow
+- [x] Hover effect for project cards to play gifs? -- Still need to figure out how i want to do this
+- [x] A more attention-grabbing load page?
 
 ### Features to Add
-- [ ] Migrate from DaisyUI components to Shadcn for more consistency in components
-- [ ] Look over the overall layout and fix margins to have a more consistent flow
-- [ ] Hover effect for project cards to play gifs? -- Still need to figure out how i want to do this
-- [ ] A more attention-grabbing load page?
+- [ ] More to come?
 
 ## Mobile View
 <img src='https://github.com/stevkim/portfolio/blob/main/gifs/mobile.gif' />
+
+## Google Metrics
+<img src='https://github.com/stevkim/portfolio/blob/main/gifs/lighthousemetrics.png' />
