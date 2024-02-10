@@ -1,10 +1,15 @@
-.nav-link {
-  transition: all .1s linear;
-  background: linear-gradient(to right, oklch(var(--p)) 50%, oklch(var(--s)) 50%);
-  background-size: 200% 100%;
-  background-position: right bottom;
+@tailwind components;
+
+@layer components {
+  .nav-link {
+    transition: all .1s linear;
+    background: linear-gradient(to right, oklch(var(--a)) 50%, oklch(var(--s)) 50%);
+    background-size: 210% 100%;
+    background-position: right bottom;
+  }
+
+  .nav-hover {
+    background-position: left bottom;
+  }
 }
 
-.nav-hover {
-  background-position: left bottom;
-}

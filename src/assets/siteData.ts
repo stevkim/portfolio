@@ -1,9 +1,16 @@
+import type { TNavLink, TProject, TSkillList } from './siteDataTypes';
 import parKing from './images/parKing.avif';
 import webCountry from './images/webcountry.avif';
 import atelier from './images/atelier.avif';
 import wedding from './images/wedding.avif';
 import calendar from './images/calendar.avif';
 import moovi from './images/moovi.avif';
+import moovigif from './gifs/moovi.gif';
+import ateliergif from './gifs/atelier.gif'
+import weddinggif from './gifs/wedding.gif'
+import parkinggif from './gifs/parKing.gif'
+import calendargif from './gifs/calendar.gif';
+import webcountrygif from './gifs/webcountry.gif';
 
 export const CurrentStackList:string[] = [
   'Typescript',
@@ -13,24 +20,27 @@ export const CurrentStackList:string[] = [
   'Supabase'
 ]
 
-export const ICONS:string[] = [
-  'https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black',
-  'https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white',
-  'https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white',
-  'https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB',
-  'https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white',
-  'https://img.shields.io/badge/Express.js-404D59?style=for-the-badge',
-  'https://img.shields.io/badge/Amazon_AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white',
-  'https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white',
-  'https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white',
-];
+export const IconList:string[] = [
+  'react-original',
+  'supabase-plain',
+  'redux-original',
+  'mongodb-plain',
+  'express-original',
+  'typescript-plain',
+  'javascript-plain',
+  'reactrouter-plain',
+  'tailwindcss-original',
+  'html5-plain',
+  'css3-plain',
+  'amazonwebservices-plain-wordmark',
+  'git-plain',
+  'jest-plain',
+  'mysql-original',
+  'nodejs-plain-wordmark',
+  'socketio-original',
+]
 
-export type NavLink = {
-  name: string,
-  link: string
-}
-
-export const NavLinks:NavLink[] = [
+export const NavLinks:TNavLink[] = [
   {
     name: 'portfolio',
     link: '/portfolio',
@@ -45,55 +55,69 @@ export const NavLinks:NavLink[] = [
   }
 ];
 
-export type Project = {
-  name: string,
-  stack: string,
-  description: string,
-  link: string,
-  image: string
-}
-
-export const Projects:Project[] = [
+export const Projects:TProject[] = [
   {
     name: 'parKing',
-    stack: 'React | Supabase | Redux',
-    description: 'A SaaS application to optimize car parking and valet interactions. Developed with high-traffic metropolitan areas in mind.',
+    stack: ['react-original', 'supabase-plain', 'redux-original'],
+    description: 'A SaaS application aimed at optimizing car parking and valet interactions in bustling metropolitan areas. As the technical lead, I took charge of project management, steering the integration of diverse features. My responsibilities encompassed project design, defining scope, and the development of backend systems.',
     link: 'https://github.com/pokemon-parKing/parKing-client',
-    image: parKing
+    image: parKing,
+    gif: parkinggif
   },
   {
     name: 'Atelier',
-    stack: 'React | MongoDB | Express',
-    description: 'An e-commerce landing page that highlights an infinite scroll feature with a backend that optimizes queries for over 5 million products.',
+    stack: ['react-original', 'mongodb-plain', 'express-original'],
+    description: 'A landing page for an e-commerce site with 5 million+ products, the project includes a smooth infinite scroll, optimized with a custom React throttle hook. Backend performance excels with a 200ms response time and a flawless 0% error rate for queries to a database housing 15 million documents.',
     link: 'https://github.com/stevkim/atelier',
-    image: atelier
+    image: atelier,
+    gif: ateliergif
   },
   {
     name: 'WebCountry',
-    stack: 'React | Redux | Puppeteer',
-    description: "A web-scraping application, users can track information on Backcountry.com and an internal service will keep item information up-to-date",
+    stack: ['react-original', 'redux-original', 'puppeteer-plain'],
+    description: "A web-scraping application using Puppeteer to enable users to track information on Backcountry.com. I implemented a background service to perform automated product scraping at scheduled intervals each day. The extracted data is then stored in a database, allowing users to monitor and analyze price trends over time.",
     link: 'https://github.com/stevkim/scraper',
-    image: webCountry
+    image: webCountry,
+    gif: webcountrygif
   },
   {
     name: 'Moovi',
-    stack: 'Typescript | React | JWT',
-    description: 'A pinterest-like media application to search, browse and save movies or tv-shows for later.',
+    stack: ['typescript-plain', 'react-original', 'framermotion-original'],
+    description: "A Pinterest-inspired media application allowing users to search, browse, and save movies or TV shows for later. Leveraging the MovieAPI, the project incorporates a robust database to store user data. A standout feature is a custom authentication system, securing user data with a JWT token stored in cookies and verified on the backend",
     link: 'https://github.com/stevkim/movie-project',
-    image: moovi
+    image: moovi,
+    gif: moovigif
   },
   {
     name: 'S & S',
-    stack: 'React | React-Router | Tailwind CSS',
-    description: "A wedding site used as an itinerary @ my wedding on July 9, 2023 that served a guest list of 100 people.",
+    stack: ['react-original', 'reactrouter-plain', 'tailwindcss-original'],
+    description: "A wedding site used as an itinerary for my July 9, 2023 celebration, featuring fluid animations powered by the Framer library. Developed with a mobile-first design pattern, the project seamlessly accommodated 100 guests, garnering positive feedback for its engaging and user-friendly experience.",
     link: 'https://github.com/stevkim/wedding',
-    image: wedding
+    image: wedding,
+    gif: weddinggif,
+    deployed: 'https://stevkim.github.io/wedding/'
   },
   {
     name: 'Google Calendar Clone',
-    stack: 'React | Typescript | CSS',
-    description: 'A minimal google calendar clone, written in Typescript. Data is stored in local storage and persisted.',
+    stack: ['react-original', 'typescript-plain', 'css3-plain'],
+    description: 'A minimal Google Calendar clone, this was my first project using Typescript and exploring data persistence. The user can navigate to precise days and create and store events. The event data is then stored in localStorage with proper keys for data integrity.',
     link: 'https://github.com/stevkim/calendar-clone',
-    image: calendar
+    image: calendar,
+    gif: calendargif
+  }
+]
+
+export const Skills:TSkillList[] = [
+  {
+    section: 'frontend',
+    skills: ['React.js', 'Axios', 'Redux', 'Framer', 'React-Router', 'Tanstack ecosystem', 'Javascript ecosystem', 'TailwindCSS']
+  },
+  {
+    section: 'backend',
+    skills: ['MongoDB', 'Supabase', 'Express.js', 'Node.js', 'Nginx', 'Socket.io', 'Mongoose', 'MySQL']
+  },
+  {
+    section: 'tools & concepts',
+    skills: ['Git', 'Jest', 'React Testing Library', 'Vite', 'Agile', 'AWS (EC2)', 'Docker', 'Webpack', 'Mocha']
   }
 ]

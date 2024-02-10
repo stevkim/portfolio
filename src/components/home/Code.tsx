@@ -11,13 +11,13 @@ const Code = () => {
       const next = setTimeout(() => {
         setActiveText(prev => prev + text[currentIndex]);
         setCurrentIndex(prev => prev + 1);
-      }, 100)
+      }, 80)
 
       return () => clearTimeout(next);
     }
   }, [currentIndex, activeText])
 
-  return <code className=''>{`${activeText}`}</code>
+  return <code className='leading-8'>{`${activeText}`}</code>
 }
 
 export default Code;

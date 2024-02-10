@@ -1,7 +1,7 @@
-import type { Project } from "../assets/siteData";
+import type { TProject } from "../assets/siteDataTypes";
 import { Projects } from "../assets/siteData";
 
-const randomProjects = ():Project[] => {
+const randomProjects = ():TProject[] => {
   const temp = Projects.slice();
   let index = temp.length;
 

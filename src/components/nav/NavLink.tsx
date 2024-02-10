@@ -1,10 +1,10 @@
 import { Link } from '@tanstack/react-router';
 import { useState } from 'react';
 import './nav.css';
-import type { NavLink } from '../../assets/siteData';
+import type { TNavLink } from '../../assets/siteDataTypes';
 
 interface Props {
-  input: NavLink
+  input: TNavLink
 }
 
 const NavLink = ({ input }:Props) => {
@@ -17,11 +17,11 @@ const NavLink = ({ input }:Props) => {
       onMouseLeave={() => setHover(false)}
       activeProps={{
         style: {
-          color: 'oklch(var(--a))',
+          color: 'oklch(var(--p))',
         }
       }}
     >
-      <div className='relative z-10 px-3'>{input.name}</div>
+      <div className='relative z-10 px-3 pb-[4px]'>{input.name}</div>
       <div className='absolute w-full h-[15%] bottom-[5%] overflow-hidden'>
         <div className={`${hover ? 'nav-hover' : ''} nav-link w-full h-full`}></div>
       </div>

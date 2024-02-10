@@ -2,36 +2,24 @@ import Intro from "../components/home/Intro";
 import AboutInfo from "../components/home/AboutInfo";
 import Scroll from "../components/home/Scroll";
 import useScroll from "../hooks/useScroll";
-import TechStack from "../components/TechStack";
 import ContactForm from "../components/contact/ContactForm";
 import HeroProjects from "../components/home/HeroProjects";
-import { motion } from 'framer-motion';
+import TechStackList from "../components/home/TechStackList";
+import BackToTopBtn from "../components/home/BackToTopBtn";
+import Welcome from "../components/home/Welcome";
 
 const Home = () => {
   const scroll = useScroll();
 
   return (
-    <main className="relative w-full min-h-[90vh]">
+    <main className="relative w-full min-h-[90vh] flex flex-col gap-20">
+      <Welcome/>
       <Intro />
       <AboutInfo />
-      <motion.div
-        initial={{ y: 200 }}
-        whileInView={{ y: 0 }}
-        viewport={{ once: true }}
-        className="my-20"
-      >
-        <TechStack />
-      </motion.div>
+      <TechStackList />
       <HeroProjects />
-      <motion.div
-        initial={{ y: 200 }}
-        whileInView={{ y: 0 }}
-        viewport={{ once: true }}
-        className="flex flex-col gap-8 items-center w-full mx-auto my-20"
-      >
-        <ContactForm />
-      </motion.div>
-      {scroll && <Scroll />}
+      <ContactForm />
+      {scroll ? <Scroll /> : <BackToTopBtn />}
     </main>
   )
 }

@@ -4,7 +4,7 @@ const useScroll = () => {
   const [visible, setVisible] = useState(true);
 
   const scroll = useCallback(() => {
-    if (window.scrollY > 50) {
+    if (window.scrollY > 500) {
       setVisible(false);
     } else {
       setVisible(true);
