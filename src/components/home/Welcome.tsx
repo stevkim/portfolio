@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from 'framer-motion'
 
-const Test = () => {
+const Welcome = () => {
   const target = 'WELCOME'
   const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
   const [word, setWord] = useState(target);
-  const [test, setTest] = useState(true);
+  const [animate, setAnimate] = useState(true);
 
-  const handleMouseOver = () => {
+  const handleScramble = () => {
     let iteration = 0
     let requestId: number | null = null
     const { length } = word
@@ -39,29 +39,27 @@ const Test = () => {
   }
 
   useEffect(() => {
-    handleMouseOver()
-    setTimeout(() => {
-      setTest(false);
+    handleScramble()
+    const setter = setTimeout(() => {
+      setAnimate(false);
     }, 2000)
+
+    return () => clearTimeout(setter)
   }, [])
 
-
   return (
-      <AnimatePresence>
-        {test && <motion.div
-            initial={{ y: -500 }}
-            animate={{ y : 0 }}
-            transition={{ type: 'linear' }}
-            exit={{ x: 500, opacity: 0 }}
-            className="text-[8rem] w-full text-center highlight font-bold absolute top-[10%]"
-            >
-              {
-              word.split('').map(letter => {
-                return <span>{letter}</span>
-              })
-              }</motion.div>
-        }
-      </AnimatePresence>
+    <AnimatePresence>
+      {animate && <motion.div
+          initial={{ y: -500 }}
+          animate={{ y : 0 }}
+          transition={{ type: 'linear' }}
+          exit={{ x: 500, opacity: 0 }}
+          className="text-[5rem] md:text-[10rem] w-full h-[80vh] highlight font-bold absolute flex justify-center items-center"
+          >
+            {word}
+          </motion.div>
+      }
+    </AnimatePresence>
   )
 }
-export default Test
+export default Welcome

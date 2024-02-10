@@ -51,6 +51,34 @@
 		transform-style: preserve-3d;
 	}
 
+	.card-front:after, .card-front:before {
+		background: linear-gradient(
+			transparent,
+			oklch(var(--a)),
+			transparent
+		);
+		height: 70px;
+		width: 2px;
+		position: absolute;
+		top: 65%;
+		content: '';
+		transition: top 600ms ease, opacity 600ms ease;
+		opacity: 0;
+	}
+
+	.card-front:after {
+		left: 0px;
+	}
+
+	.card-front:before {
+		right: 0px;
+	}
+
+	.card-front:hover:after, .card-front:hover:before {
+		top: 25%;
+		opacity: 1;
+	}
+
 	.card-toggle {
 		transform: rotateX(180deg);
 	}
@@ -68,6 +96,12 @@
     -webkit-text-fill-color: transparent;
     background-size: 500% auto;
 		animation: highlight 5s ease-in-out infinite alternate;
+	}
+
+	@keyframes rotate {
+		0% { transform: rotate(0);}
+		50% { transform: rotate(360deg);}
+		100% { transform: rotate(0deg);}
 	}
 
 	@keyframes highlight {

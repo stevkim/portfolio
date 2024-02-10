@@ -11,6 +11,7 @@ const TechStackList = () => {
       IconList.map((icon, index) => {
         return (
           <motion.div
+            key={icon}
             initial={{ x: '100%', opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ type: 'linear', delay: index * 0.1 }}

@@ -30,7 +30,7 @@ const ProjectCard = ({ project, activeState, index }:Props) => {
       className="w-full md:w-[45%] flex justify-center"
     >
       <div
-        className={`card-wrapper relative h-[400px] lg:h-[500px] w-full max-w-[600px] shadow-lg bg-base-400 p-8 transition-all ${active === project.name ? 'card-toggle' : ''} overflow-hidden rounded-sm`}
+        className={`card-wrapper relative h-[600px] lg:h-[500px] w-full max-w-[600px] shadow-lg bg-base-400 p-8 transition-all ${active === project.name ? 'card-toggle' : ''} overflow-hidden rounded-sm`}
       >
         <div className={`card-front z-[2] absolute bg-base-200 w-full h-full top-0 left-0 ${active === project.name ? 'translate-x-[100%]' : 'translate-x-[0]'} p-4`}>
           <img  src={project.image} alt={project.name} width='300px' height='300px' className="w-[95%] h-[50%] lg:h-[55%] mx-auto object-contain mb-1" />
@@ -39,12 +39,10 @@ const ProjectCard = ({ project, activeState, index }:Props) => {
               <h2 className="text-2xl lg:text-3xl font-semibold text-secondary">{project.name}</h2>
               <UsedStack projectName={project.name} skills={project.stack} />
             </div>
-            <div className="text-base mb-auto">
+            <div className="md:text-base mb-auto">
               {project.description}
             </div>
-            <div className="flex items-center">
-              <ProjectBtns link={project.link} deployed={project.deployed} handleSetActive={handleSetActive} />
-            </div>
+            <ProjectBtns link={project.link} deployed={project.deployed} handleSetActive={handleSetActive} />
           </div>
         </div>
         {active === project.name ? <CardBack gif={project.gif}  handleSetActive={handleSetActive}/> : null}
