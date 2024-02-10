@@ -10,7 +10,7 @@ const Footer = () => {
         <GithubBtn link='https://github.com/stevkim/portfolio' />
       </div>
       <div className="md:w-[50%] w-full flex flex-col gap-2">
-        <h4 className="ml-auto w-fit h-fit bg-accent p-2 text-white text-sm pointer-events-none">my social links</h4>
+        <span className="ml-auto w-fit h-fit bg-accent p-2 text-white text-sm pointer-events-none">my social links</span>
         <Socials />
       </div>
     </footer>

@@ -36,7 +36,7 @@ const ProjectCard = ({ project, activeState, index }:Props) => {
           <img  src={project.image} alt={project.name} width='300px' height='300px' className="w-[95%] h-[50%] lg:h-[55%] mx-auto object-contain mb-1" />
           <div className="h-[40%]">
             <div className="flex items-center justify-between mb-2">
-              <h2 className="text-2xl lg:text-3xl font-semibold text-secondary">{project.name}</h2>
+              <h2 className="text-2xl lg:text-3xl font-semibold text-primary">{project.name}</h2>
               <UsedStack projectName={project.name} skills={project.stack} />
             </div>
             <div className="md:text-base mb-auto">

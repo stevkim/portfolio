@@ -6,7 +6,6 @@ import Home from './containers/Home.tsx'
 import Contact from './containers/Contact.tsx'
 import About from './containers/About.tsx'
 import Portfolio from './containers/Portfolio.tsx'
-import Test from './containers/Test.tsx'
 import { Provider } from 'react-redux';
 import { store } from './store';
 
@@ -38,13 +37,7 @@ const aboutRoute = new Route({
   component: About
 })
 
-const testRoute = new Route({
-  getParentRoute: () => rootRoute,
-  path: '/test',
-  component: Test
-})
-
-const routeTree = rootRoute.addChildren([homeRoute, portfolioRoute, aboutRoute, contactRoute, testRoute]);
+const routeTree = rootRoute.addChildren([homeRoute, portfolioRoute, aboutRoute, contactRoute]);
 
 const router = new Router({ routeTree });
 
