@@ -1,11 +1,11 @@
-import ContactForm from '@/components/contact/ContactForm';
+import ContactForm from "@/components/contact/ContactForm";
 
 const Contact = () => {
-	return (
-		<section className="mx-auto py-20 min-h-[90vh] w-[90%] lg:w-full">
-			<ContactForm />
-		</section>
-	);
+  return (
+    <section className="mx-auto min-h-[90vh] w-[90%] py-20 lg:w-full">
+      <ContactForm />
+    </section>
+  );
 };
 
 export default Contact;

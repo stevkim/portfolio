@@ -2,8 +2,12 @@
 
 @layer components {
   .nav-link {
-    transition: all .1s linear;
-    background: linear-gradient(to right, oklch(var(--a)) 50%, oklch(var(--s)) 50%);
+    transition: all 0.1s linear;
+    background: linear-gradient(
+      to right,
+      oklch(var(--a)) 50%,
+      oklch(var(--s)) 50%
+    );
     background-size: 210% 100%;
     background-position: right bottom;
   }
@@ -12,4 +16,3 @@
     background-position: left bottom;
   }
 }
-
