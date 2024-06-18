@@ -12,6 +12,7 @@ import weddinggif from "./gifs/wedding.gif";
 import parkinggif from "./gifs/parKing.gif";
 import calendargif from "./gifs/calendar.gif";
 import webcountrygif from "./gifs/webcountry.gif";
+import anonGif from "./gifs/anon.gif";
 
 export const CurrentStackList: string[] = [
   "Typescript",
@@ -66,7 +67,7 @@ export const Projects: TProject[] = [
       "Anon is a platform to read, write, and share literature anonymously. Users can create accounts, publish their writing, and like and share posts. Tested end-to-end with Playwright, Anon features a rich text editor utilizing Novel.sh and Tiptap, allowing users the flexibility to write to their hearts' content.",
     link: "https://github.com/stevkim/anon",
     image: anon,
-    gif: "",
+    gif: anonGif,
     deployed: "https://anon-stevkims-projects.vercel.app/",
   },
   {
