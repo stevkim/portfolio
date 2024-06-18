@@ -1,8 +1,7 @@
 import type { TProject } from "@/assets/siteDataTypes";
-import UsedStack from "./UsedStack";
-import { motion } from "framer-motion";
-import CardBack from "./CardBack";
-import ProjectBtns from "./ProjectBtns";
+import UsedStack from "../project-list/UsedStack";
+import CardBack from "../project-list/CardBack";
+import ProjectBtns from "../project-list/ProjectBtns";
 
 type TActive = {
   active: string | null;
@@ -12,10 +11,9 @@ type TActive = {
 interface Props {
   project: TProject;
   activeState: TActive;
-  index: number;
 }
 
-const ProjectCard = ({ project, activeState, index }: Props) => {
+const ProjectCard = ({ project, activeState }: Props) => {
   const { active, handleActive } = activeState;
 
   const handleSetActive = () => {
@@ -23,12 +21,7 @@ const ProjectCard = ({ project, activeState, index }: Props) => {
   };
 
   return (
-    <motion.div
-      initial={{ y: 200, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{ delay: index * 0.1 }}
-      className="flex w-full justify-center md:w-[45%]"
-    >
+    <div className="flex w-[20rem] justify-center md:w-[35rem]">
       <div
         className={`card-wrapper bg-base-400 relative h-[32rem] w-full max-w-[600px] p-8 shadow-lg transition-all ${
           active === project.name ? "card-toggle" : ""
@@ -65,7 +58,7 @@ const ProjectCard = ({ project, activeState, index }: Props) => {
           <CardBack gif={project.gif} handleSetActive={handleSetActive} />
         ) : null}
       </div>
-    </motion.div>
+    </div>
   );
 };
 export default ProjectCard;

@@ -4,17 +4,19 @@ import Socials from "../Socials";
 
 const Footer = () => {
   return (
-    <footer className="flex w-full bg-base-300 mt-10 p-4 md:px-[20%]" >
-      <div className="md:w-[50%] w-full flex flex-col gap-2">
+    <footer className="mt-10 flex w-full bg-base-300 p-4 md:px-[20%]">
+      <div className="flex w-full flex-col gap-2 md:w-[50%]">
         <Badge />
-        <GithubBtn link='https://github.com/stevkim/portfolio' />
+        <GithubBtn link="https://github.com/stevkim/portfolio" />
       </div>
-      <div className="md:w-[50%] w-full flex flex-col gap-2">
-        <span className="ml-auto w-fit h-fit bg-accent p-2 text-white text-sm pointer-events-none">my social links</span>
+      <div className="flex w-full flex-col gap-2 md:w-[50%]">
+        <span className="pointer-events-none ml-auto h-fit w-fit bg-accent p-2 text-sm text-white">
+          my social links
+        </span>
         <Socials />
       </div>
     </footer>
-  )
-}
+  );
+};
 
 export default Footer;

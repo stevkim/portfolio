@@ -11,7 +11,7 @@ const randomProjects = (): TProject[] => {
 
 		[temp[index], temp[randomIndex]] = [temp[randomIndex], temp[index]];
 	}
-	return temp.slice(3);
+	return temp.slice(2);
 };
 
 export default randomProjects;
